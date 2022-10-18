@@ -46,14 +46,19 @@
             padding: 1rem 1rem;
             vertical-align: middle;
         }
-        #Valorant {
-      -webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-      mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+        #Valorant{
+			    -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+			    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
 
-    }
-        #subContent{
+        }
+		#minecraft {
+			  -webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+			  mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+
+		}
+        #subContent, subContent2{
             position: relative;
-            text-align: center;
+			text-align: right;
         }
         #subContentText{
             position: absolute;
@@ -62,43 +67,67 @@
             text-align:left;
             font-family: Poppins;
             font-size: 24px;
+			text-indent: 8%;
+			margin-top: 7%;
         }
+		
+		#subContentText2 {
+            position: absolute;	
+            right: 10%;
+            text-align:right;
+            font-family: Poppins;
+            font-size: 24px;
+			text-indent: 8%;
+			margin-top:-20%;
+			margin-right: 1%;
+		
+		}
+		
         hr.rounded {
             border-top: 8px solid rgb(0, 0, 0);
             border-radius: 5px;
         }
 
     </style>
-        <title>Home</title>
+        <title>Games</title>
     </head>
 
     <body>
         <div id = "topContent">
             <img src = "Images\Blue.png" alt = "logo" width = 10%  height = auto style = "vertical-align: middle;">
-            <h1 id = "pageTitle">●Home●</h1>
+            <h1 id = "pageTitle">●Games●</h1>
+			<a href="About.html" class = "Links">About me</a>
+			<a href="About.html" class = "Links">Home</a>
             <a href="Music.html" class = "Links">Music</a>
-            <a href="About.html" class = "Links">About me</a>
+
 
 
         </div>
         <div id = "mainContent">
             <div id="subContent">
-                <img src="Images\valorant.jpg" id="Valorant", width = 100%>
+                <img src="Images\valorant.jpg" id="Valorant", width = 50%>
                 <p id = subContentText> <strong><i>Valorant</i><strong> is a tactical
-                     <br>  shooter that I really 
-                    <br> enjoy playing, it is 
-                    <br> competitive and exciting.
-                     <br> Although it does get on
-                      <br> my nerves sometimes <br>
+                       shooter that I really 
+                     enjoy playing, it is <br>
+                     competitive and exciting.
+                      Although it does get on
+                       my nerves <br> sometimes 
                       when I lose 20 games
-                      <br>in a row. It's still 
-                      <br>really fun and I enjoy
-                      <br>playing it with 
-                      <br>friends too.</p>
+                      in a row or get one tapped <br> across the map. It's still 
+                      really fun and I enjoy
+                      playing it with 
+                      friends too.</p>
             </div>
             <div id="subContent2">
-                <img src="Images\minecraft.jpg" id="minecraft", width = 100%>
-                <p id = subContentText2></p>
+                <img src="Images\minecraft.jpg" id="minecraft", width = 50%>
+				<p id = subContentText2>I haven't played minecraft in a while <br>
+				but it is definitely one of the best games I have played, <br>there
+				is endless things to do in the game, once you finish the <br>main game
+				you could stil build and explore,<br> but if you get tired of that, you
+				could play with other <br>people in multiplayer, if that gets tiring
+				too you could play <br>with modifications made by other people that 
+				<br>enhance your gameplay.I believe it is one <br> of the best games ever made.</p>
+
             </div>
             <hr class="rounded">
 
