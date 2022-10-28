@@ -56,51 +56,46 @@
             vertical-align: middle;
         }
 
-        #subContent1 {
-            width:80%;
-            height:20%;
-            margin-left: 1%;
 
-        }
 
-        #subContent2 {
-            width:80%;
-            height:20%;
-            margin-left: 65%;
-            
-        }
-        #textContent1 {
-            width:55%;
-            height:82%;
-            margin-left: 43%;
-            margin-top:-40%;
-            background-color:#9c95dc;
-            font-size: 30px;
-            
-        }
-        #textContent2 {
-            width:55%;
-            height:82%;
-            margin-left: -53.1%;
-            margin-top:-40%;
-            background-color:#9c95dc;
-            font-size: 30px;
-            
-        }
-        #inabakumori, #TUYU {
+        #subContent{
             position: relative;
-            padding-right:2.5%;
-            padding-left: 2.5%;
-            padding-top:5%;
+			text-align: right;
+            background-image: linear-gradient(to left,rgb(60, 161, 255), rgba(213, 96, 218, 0.658));
+            width:100%;
+            height:auto; 
         }
-        #inabakumori {
-            top: 0px;
-            left: 0px;
+        #subContent2{
+            position: relative;
+			text-align: left;
+            background-image: linear-gradient(to right, rgb(153, 153, 153), rgb(255, 255, 255));
+            width:100%;
+            height:auto; 
         }
-        #TUYU{
-            left: 0px;
+        #subContentText{
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            text-align:left;
+            font-family: Poppins;
+            font-size: 120%;
+			text-indent: 8%;
+			margin-top: 7%;
         }
-        #subContent1:hover, #subContent2:hover{
+		
+		#subContentText2 {
+            position: absolute;	
+            right: 10%;
+            text-align:right;
+            font-family: Poppins;
+            font-size: 120%;
+			text-indent: 8%;
+            position: absolute;
+            top: 8px;
+            right: 16px;
+		
+		}
+        #subContent:hover, #subContent2:hover{
             transform: scale(1.1);
             z-index: 5;
         }
@@ -123,21 +118,30 @@
         </div>
 
         <div id = "mainContent">
-            <h2>test</h2>
-            <div id ="subContent1">
-                <img src = "Images\TUYU.jpg" alt = "TUYU" width = 40%  height = auto id = "TUYU">
-                <div id ="textContent1">
-                    TUYU makes some real banger content
-                </div>
-            </div>
-            <div id ="subContent2">
-                <img src = "Images\inabakumori2.png" alt = "inabakumori" width = 40%  height = auto id = "inabakumori">
-                <div id ="textContent2">
-                    Inabakumori also makes some real banger content
+            <div id="Genre">
+                <h3>Favorite genres</h3>
+                <div id="Jpop">
+
+                    <p id = JpopText>bob the builder</p>
                 </div>
 
-                </div>>
+            <div id="Artists">
+                <h3>Artists I like</h3>
+                <div id="subContent">
+
+                    <img src="Images\TUYU.jpg" id="TUYU", width = 25%>
+                    <p id = subContentText> kurarerabekko kurarerabeko tokuni shiteiru yo</p>
+                </div>
+
+                <hr class="rounded">
+
+
+                <div id="subContent2">
+                    <img src="Images\inabakumori2.png" id="inabakumori", width = 25%>
+                    <p id = subContentText2>hanare ba nani mo machi o tsunagu teisha wa ite shitma taru </p>
+                </div>
             </div>
+        </div>
         </div>
         <div id = "bottomContent">
 
