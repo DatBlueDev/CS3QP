@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body {
+            background-color: #170A1C;
+        }
+        h2{
+            padding-top:0.7%;
+            font-family: Poppins;
+            text-align: center;
+        }
+        #mainContent {
+            margin-top:100px;
+            width:80%;
+            height:2000px;
+            margin-left: auto;
+            margin-right:auto;
+            background-color: #fafafa;
+        }
+        #topContent {
+            font-family: Poppins;
+            font-size: 24px;
+            background-color: #228CDB;
+            width:100%;
+            height:8%; 
+
+        }
+        #bottomContent {
+            vertical-align:bottom;
+            font-family: Poppins;
+            font-size: 16px;
+            background-color: #2522dba1;
+            width:100%;
+            height:5%; 
+
+        }
+        #pageTitle
+        {
+            display: inline-block;
+            padding: 1rem 1rem;
+            vertical-align: middle;
+            
+        }
+        .Links {
+            display: inline-block;
+            padding: 1rem 1rem;
+            vertical-align: middle;
+        }
+
+
+
+        #subContent{
+            position: relative;
+			text-align: right;
+            background-image: linear-gradient(to left,rgb(60, 161, 255), rgb(230, 142, 233));
+            width:100%;
+            height:auto; 
+        }
+        #subContent2{
+            position: relative;
+			text-align: left;
+            background-image: linear-gradient(to right, rgb(153, 153, 153), rgb(255, 255, 255));
+            width:100%;
+            height:auto; 
+        }
+        #subContentText{
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            text-align:left;
+            font-family: Poppins;
+            font-size: 120%;
+			text-indent: 8%;
+			margin-top: 7%;
+        }
+		
+		#subContentText2 {
+            position: absolute;	
+            right: 10%;
+            text-align:right;
+            font-family: Poppins;
+            font-size: 120%;
+			text-indent: 8%;
+            position: absolute;
+            top: 8px;
+            right: 16px;
+		
+		}
+        #subContent3{
+            position: relative;
+			text-align: right;
+            background-image: linear-gradient(to left,rgb(255, 0, 89), rgb(238, 111, 255));
+            width:100%;
+            height:auto; 
+        }
+
+        #subContentText3{
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            text-align:left;
+            font-family: Poppins;
+            font-size: 120%;
+			text-indent: 8%;
+			margin-top: 7%;
+        }
+		
+        #subContent:hover, #subContent2:hover, #subContent3:hover{
+            transform: scale(1.1);
+            z-index: 5;
+        }
+
+
+    </style>
+        <title>Music I like</title>
+    </head>
+
+    <body>
+        <div id = "topContent">
+            <img src = "Images\Blue.png" alt = "logo" width = 10%  height = auto style = "vertical-align: middle;">
+            <h1 id = "pageTitle">●Music●</h1>
+            <a href="Home.html" class = "Links">Home</a>
+            <a href="About.html" class = "Links">About me</a>
+            <a href="Home.html" class = "Links">Games</a>
+            <a href="Hobbies.html" class = "Links">Hobbies</a>
+
+
+        </div>
+
+        <div id = "mainContent">
+            <div id="Genre">
+                <h3>Favorite genres</h3>
+                <div id="Jpop">
+
+                    <p id = JpopText>bob the builder</p>
+                </div>
+
+            <div id="Artists">
+                <h3>Artists I like</h3>
+                <div id="subContent">
+
+                    <img src="Images\TUYU.jpg" id="TUYU", width = 25%>
+                    <p id = subContentText> <strong>TUYU</strong> is a music group from Japan that sings about a variety
+                        of topics</p>
+                </div>
+
+                <hr class="rounded">
+
+
+                <div id="subContent2">
+                    <img src="Images\inabakumori2.png" id="inabakumori", width = 25%>
+                    <p id = subContentText2>hanare ba nani mo machi o tsunagu teisha wa ite shitma taru </p>
+                </div>
+
+                <div id="subContent3">
+
+                    <img src="Images\PinocchioP.jfif" id="TUYU", width = 25%>
+                    <p id = subContentText3> TUYU, or TSUYU, is a music group from Japan that </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id = "bottomContent">
+
+            <p id = "bottomText">Made by Kyle Intal</p>
+
+        </div>
+    </body>
+    
+</html>

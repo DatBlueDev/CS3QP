@@ -4,7 +4,7 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
     <style>
         *{
             margin:0px;
@@ -21,10 +21,10 @@
         #mainContent {
             margin-top:100px;
             width:80%;
-            height:1500px;
+            height:auto;
             margin-left: auto;
             margin-right:auto;
-            background-color: #e4e4e4;
+            background-color: #fafafa;
         }
         #topContent {
             font-family: Poppins;
@@ -80,6 +80,40 @@
             color: rgb(255, 255, 255);
             width:35%;
         }
+        #subContent2{
+            position: relative;
+			text-align: left;
+            background-color: rgba(255, 119, 119, 0.555);
+            height:auto; 
+
+        }
+
+		#subContentText2 {
+            position: absolute;	
+            right: 10%;
+            text-align:right;
+            font-family: Poppins;
+            font-size: 120%;
+			text-indent: 8%;
+            position: absolute;
+            top: 25%;
+            right: 16px;
+            width:40%;
+            vertical-align: center;
+		
+		}
+        #Cycling {
+			  -webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+			  mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+
+		}
+        h3{
+            background-color: black;
+            color:white;
+            font-family: Poppins;
+            text-align: center;
+            font-size:150%;
+        }
 
     </style>
         <title>Hobbies</title>
@@ -97,14 +131,31 @@
 
         </div>
         <div id = "mainContent">
-            <h3>Hobbies</h3>
+            <h3>Hobbies and interests</h3>
             <div id="subContent">
 
                 <img src="Images\Coding.jpg" id="Programming", width = 65%, height = auto>
-                <p id = subContentText>Programming is something I am really passionate about and enjoy</p>
+                <p id = subContentText><strong>Programming</strong> is something I am really passionate about and enjoy.
+                    Creating things like Discord Bots, automations, macros, and even video games with Unity;
+                    I have come to enjoy the feeling of creating something with code, solving problems and
+                    providing solutions with my programs. I have also come to experience of banging my head 
+                    against the wall (metaphorically) when my code doesn't work, and that amazing feeling like
+                    you just won the lottery when it does.
+                </p>
             </div>
 
             <hr class="rounded">
+
+            <div id="subContent2">
+
+                <img src="Images\Cycling.jpg" id="Cycling", width = 65%, height = auto>
+                <p id = subContentText2>Sometimes after lazing around, it's a good idea to
+                    step out of one's cave and see the world. I do this by <strong>Cycling</strong>,
+                    I use my bike and go outside, maybe touch the grass and feel the breeze of fresh air.
+                    It's a great way to get some exercise, increase endurance, and a break from always
+                    being indoors.
+                </p>
+            </div>
 
 
         </div>
